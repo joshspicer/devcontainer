@@ -1,0 +1,29 @@
+{
+  "features": [
+    {
+      "id": "one",
+      "name": "Feature Number 1",
+      "type": "option",
+      "default": false,
+      "buildArg": "_JOSHSPICER_DEVCONTAINER_ONE",
+      "include": ["ubuntu"]
+    },
+    {
+      "id": "two",
+      "name": "Feature Number 2",
+      "type": "option",
+      "default": false,
+      "buildArg": "_JOSHSPICER_DEVCONTAINER_TWO",
+      "include": ["ubuntu"]
+    },
+    {
+      "id": "three",
+      "name": "Feature Number 3",
+      "type": "option",
+      "default": false,
+      "buildArg": "_JOSHSPICER_DEVCONTAINER_THREE",
+      "include": ["ubuntu"]
+    }
+  ],
+  "UNIQUE_PREFIX": "_JOSHSPICER_DEVCONTAINER"
+}
