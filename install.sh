@@ -2,7 +2,7 @@
 set -e
 
 set -a
-. /tmp/build-features/features.env
+. ./features.env
 set +a
 
 mkdir -p /usr/local/numbers
