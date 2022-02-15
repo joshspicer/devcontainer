@@ -1,4 +1,4 @@
-name: 'Deploy Devcontainer Features (Manually)'
+name: 'Run Dev Container Action'
 on:
   workflow_dispatch:
   push:
