@@ -1,0 +1,134 @@
+{
+    "publisher": "Microsoft",
+    "repository": "joshspicer/devcontainer",
+
+    "features": {},
+    "definitions": [
+        {
+          "id": "typescript-node",
+          "displayName": "Node.js & Typescript",
+          "description": "Develop Node.js based applications in TypeScript. Includes Node.js, eslint, nvm, yarn, and the TypeScript compiler.",
+          "type": "singleContainer",
+          "categories": [
+            "Core",
+            "Languages"
+          ],
+          "architectures": [
+            "x86-64",
+            "arm64"
+          ],
+          "includesExampleCode": false,
+          "baseOS": "Debian",
+          "options": {
+            "VARIANT": {
+              "type": "string",
+              "proposals": [
+                "16-bullseye",
+                "14-bullseye",
+                "12-bullseye",
+                "16-buster",
+                "14-buster",
+                "12-buster"
+              ],
+              "default": "14-bullseye"
+            }
+          }
+        },
+        {
+          "id": "go",
+          "displayName": "Go",
+          "description": "Develop Go based applications. Includes appropriate runtime args, Go, common tools, extensions, and dependencies.",
+          "type": "singleContainer",
+          "categories": [
+            "Core",
+            "Languages"
+          ],
+          "architectures": [
+            "x86-64",
+            "arm64"
+          ],
+          "includesExampleCode": false,
+          "baseOS": "Debian",
+          "options": {
+            "VARIANT": {
+              "type": "string",
+              "proposals": [
+                "1", 
+                "1.16", 
+                "1.17", 
+                "1-bullseye", 
+                "1.16-bullseye", 
+                "1.17-bullseye", 
+                "1-buster", 
+                "1.16-buster", 
+                "1.17-buster"
+              ],
+              "default": "1-bullseye"
+            }
+          }
+        },
+        {
+          "id": "java",
+          "displayName": "Java",
+          "description": "Develop Java applications. Includes the JDK and Java extensions.",
+          "type": "singleContainer",
+          "categories": [
+            "Core",
+            "Languages"
+          ],
+          "architectures": [
+            "x86-64",
+            "arm64"
+          ],
+          "includesExampleCode": false,
+          "baseOS": "Debian",
+          "options": {
+            "VARIANT": {
+              "type": "string",
+              "proposals": [
+                "11", 
+                "17", 
+                "11-bullseye", 
+                "17-bullseye", 
+                "11-buster",
+                "17-buster"
+              ],
+              "default": "11-bullseye"
+            }
+          }
+        },
+        {
+          "id": "javascript-node-mongo",
+          "displayName": "Node.js & Mongo DB",
+          "description": "Develop applications in Node.js and Mongo DB. Includes Node.js, eslint, and yarn in a container linked to a Mongo DB.",
+          "type": "dockerCompose",
+          "categories": [
+            "Core",
+            "Languages"
+          ],
+          "architectures": [
+            "x86-64",
+            "arm64"
+          ],
+          "includesExampleCode": false,
+          "baseOS": "Debian",
+          "options": {
+            "VARIANT": {
+              "type": "string",
+              "proposals": [
+                "16-bullseye",
+                "14-bullseye",
+                "12-bullseye",
+                "16-buster",
+                "14-buster",
+                "12-buster",
+                "16",
+                "14",
+                "12"
+              ],
+              "default": "14"
+            }
+          }
+        }
+    ]
+}
