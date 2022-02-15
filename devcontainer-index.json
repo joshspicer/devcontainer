@@ -2,7 +2,7 @@
     "publisher": "Microsoft",
     "repository": "joshspicer/devcontainer",
 
-    "features": {},
+    "features": [],
     "definitions": [
         {
           "id": "typescript-node",
