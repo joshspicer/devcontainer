@@ -16,6 +16,8 @@ jobs:
         with:
           publish-features: "true"
           publish-definitions: "true"
+          path-to-features: "./features"
+          path-to-definitions: "./definitions"
           
       - name: Get or Create Release at current tag
         uses: ncipollo/release-action@v1
