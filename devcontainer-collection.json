@@ -9,7 +9,7 @@
     "features": [
         {
             "id": "featureA",
-            "name": "My First Feature",
+            "name": "My First Feature during demo",
             "options": {
                 "greeting": {
                     "type": "string",
