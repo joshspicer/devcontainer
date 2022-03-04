@@ -1,8 +1,49 @@
 {
-    "publisher": "Microsoft",
-    "repository": "joshspicer/devcontainer",
-
-    "features": [],
+	"sourceInformation": {
+		"owner": "joshspicer",
+		"repo": "devcontainer",
+		"ref": "",
+		"sha": "",
+		"tag": ""
+    },
+    "features": [
+        {
+            "id": "featureA",
+            "name": "My First Feature",
+            "options": {
+                "greeting": {
+                    "type": "string",
+                    "proposals": ["hey1", "hello1", "hi1", "howdy1" ],
+                    "default": "hey1",
+                    "description": "Select a pre-made greeting, or enter your own"
+                }
+            }
+        },
+        {
+            "id": "featureB",
+            "name": "My Second Feature",
+            "options": {
+                "greeting": {
+                    "type": "string",
+                    "proposals": ["hey1", "hello1", "hi1", "howdy1" ],
+                    "default": "hey1",
+                    "description": "Select a pre-made greeting, or enter your own"
+                }
+            }
+        },
+        {
+            "id": "featureC",
+            "name": "My Third Feature",
+            "options": {
+                "greeting": {
+                    "type": "string",
+                    "proposals": ["hey1", "hello1", "hi1", "howdy1" ],
+                    "default": "hey1",
+                    "description": "Select a pre-made greeting, or enter your own"
+                }
+            }
+        }
+    ],
     "definitions": [
         {
           "id": "typescript-node",
