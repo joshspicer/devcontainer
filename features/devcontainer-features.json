@@ -1,7 +1,7 @@
 {
     "features": [
         {
-            "id": "helloworld",
+            "id": "featureA",
             "name": "My First Feature",
             "options": {
                 "greeting": {
@@ -10,8 +10,31 @@
                     "default": "hey1",
                     "description": "Select a pre-made greeting, or enter your own"
                 }
-            },
-            "include": ["ubuntu"]
+            }
+        },
+        {
+            "id": "featureB",
+            "name": "My Second Feature",
+            "options": {
+                "greeting": {
+                    "type": "string",
+                    "proposals": ["hey1", "hello1", "hi1", "howdy1" ],
+                    "default": "hey1",
+                    "description": "Select a pre-made greeting, or enter your own"
+                }
+            }
+        },
+        {
+            "id": "featureC",
+            "name": "My Third Feature",
+            "options": {
+                "greeting": {
+                    "type": "string",
+                    "proposals": ["hey1", "hello1", "hi1", "howdy1" ],
+                    "default": "hey1",
+                    "description": "Select a pre-made greeting, or enter your own"
+                }
+            }
         }
     ]
 }
