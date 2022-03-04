@@ -10,18 +10,37 @@ set -a
 . ./devcontainer-features.env
 set +a
 
-# Build args are exposed to this entire feature set following the pattern:  _BUILD_ARG_<FEATURE ID>_<OPTION NAME>
-GREETING=${_BUILD_ARG_HELLOWORLD_GREETING:-undefined}
+function applyFeature() {
 
-tee /usr/hello.sh > /dev/null \
-<< EOF
-#!/bin/bash
-RED='\033[0;91m'
-NC='\033[0m' # No Color
-echo -e "\${RED}${GREETING}, \$(whoami)!"
-echo -e "\${NC}"
-EOF
+  # Build args are exposed to this entire feature set following the pattern:  _BUILD_ARG_<FEATURE ID>_<OPTION NAME>
+  GREETING=${_BUILD_ARG_$1_GREETING:-undefined}
 
-chmod +x /usr/hello.sh
-sudo cat '/usr/hello.sh' > /usr/local/bin/hello
-sudo chmod +x /usr/local/bin/hello
+  tee /usr/hello.sh > /dev/null \
+  << EOF
+  #!/bin/bash
+  RED='\033[0;91m'
+  NC='\033[0m' # No Color
+  echo -e "\${RED}${GREETING}, \$(whoami)!"
+  echo -e "\${NC}"
+  EOF
+
+  chmod +x /usr/hello.sh
+  sudo cat '/usr/hello.sh' > /usr/local/bin/$1
+  sudo chmod +x /usr/local/bin/$1
+}
+
+
+if [ ! -z ${_BUILD_ARG_FEATUREA} ]; then
+  applyFeature 'FEATUREA'
+fi
+
+if [ ! -z ${_BUILD_ARG_FEATUREB} ]; then
+  applyFeature 'FEATUREB'
+fi
+
+if [ ! -z ${_BUILD_ARG_FEATUREC} ]; then
+  applyFeature 'FEATUREC'
+fi
+
+
+
