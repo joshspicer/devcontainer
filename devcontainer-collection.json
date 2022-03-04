@@ -47,8 +47,8 @@
     "definitions": [
         {
           "id": "typescript-node",
-          "displayName": "Node.js & Typescript",
-          "description": "Develop Node.js based applications in TypeScript. Includes Node.js, eslint, nvm, yarn, and the TypeScript compiler.",
+          "displayName": "Josh's Node Definition",
+          "description": "Develop Node.js based applications in TypeScript.",
           "type": "singleContainer",
           "categories": [
             "Core",
@@ -77,7 +77,7 @@
         },
         {
           "id": "go",
-          "displayName": "Go",
+          "displayName": "Josh develops in Go",
           "description": "Develop Go based applications. Includes appropriate runtime args, Go, common tools, extensions, and dependencies.",
           "type": "singleContainer",
           "categories": [
@@ -122,7 +122,7 @@
         },
         {
           "id": "java",
-          "displayName": "Java",
+          "displayName": "Josh reluctantly uses Java",
           "description": "Develop Java applications. Includes the JDK and Java extensions.",
           "type": "singleContainer",
           "categories": [
@@ -152,7 +152,7 @@
         },
         {
           "id": "javascript-node-mongo",
-          "displayName": "Node.js & Mongo DB",
+          "displayName": "Docker-Compose is pretty neat",
           "description": "Develop applications in Node.js and Mongo DB. Includes Node.js, eslint, and yarn in a container linked to a Mongo DB.",
           "type": "dockerCompose",
           "categories": [
